@@ -1,91 +1,168 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <style>
-        .title {
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, serif;
-        }
-    </style>
-    <style>
-        .content {
-            font-family: 'Times New Roman', Times, serif;
-        }
-    </style>
-    <style>
-    .light-box {
-        background-color: lab(43.68% -25.68 11.73); /* light box */
-        width: 70%;
-        margin: 40px auto; /* centers it */
-        padding: 25px;
+<meta charset="UTF-8">
+<title>Sid Shah</title>
 
-        border-radius: 15px;
+<style>
+body {
+    margin: 0;
+    background-color: #0f1512;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #eaeaea;
+}
 
-        box-shadow: 0px 0px 25px rgb(2, 207, 71);
-    }
-    </style>2
-    <style>
-        body {
-            background-color: #0f1512;
-        }
-    </style>
-    <style>
-        .center-image {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            border-radius: 15px;
-            box-shadow: 0px 0px 25px rgb(2, 207, 71);
-            width: 150px;
-        }
-    </style>
-    <style>
-        .FTClogo {
-            float: right; /* or float: right; */
-            margin-right: 15px; /* Adds space between the image and the text */
-            margin-left: 1px;
-            margin-bottom: 10px;
-            width: 30px; /* Optional: set image size */
-        }
-    </style>
+/* ===== Main container ===== */
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* ===== Profile image ===== */
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 25px rgb(2, 207, 71);
+    margin-bottom: 20px;
+}
+
+/* ===== Name ===== */
+.name {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.highlight {
+    background-color: rgba(120, 140, 190, 0.3);
+    padding: 6px 14px;
+    border-radius: 8px;
+}
+
+/* ===== Subtitle ===== */
+.subtitle {
+    font-size: 20px;
+    opacity: 0.8;
+    margin-bottom: 30px;
+}
+
+/* ===== Divider ===== */
+.divider {
+    height: 2px;
+    background-color: #9aa7b8;
+    margin: 35px 0;
+}
+
+/* ===== Social icons ===== */
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.socials img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: #6f6f6f;
+    padding: 12px;
+}
+
+/* ===== Section cards ===== */
+.light-box {
+    background-color: #1b2420;
+    margin: 40px auto;
+    padding: 35px;
+    border-radius: 18px;
+    box-shadow: 0 0 25px rgb(2, 207, 71);
+}
+
+/* ===== Section titles ===== */
+.section-title {
+    font-size: 30px;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+
+/* ===== Text ===== */
+.content {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #dcdcdc;
+}
+</style>
 </head>
 
 <body>
 
-<h1 class= "title"  style="text-align: center; color: rgb(254, 254, 254);" >Sid Shah</h1>
+<div class="container">
 
-<img src="Sid.png" alt="dawgPFP" class="center-image">
+    <!-- PROFILE IMAGE -->
+    <img src="Sid.png" class="profile-pic">
+
+    <!-- NAME -->
+    <div class="name">
+        Hi, I'm <span class="highlight">Sid Shah</span>!
+    </div>
+
+    <!-- SUBTITLE -->
+    <div class="subtitle">
+        Robotics programmer, student, athlete
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- SOCIAL ICONS -->
+    <div class="socials">
+        <img src="linkedin.png">
+        <img src="github.png">
+        <img src="email.png">
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- INTRODUCTION -->
+    <div class="light-box">
+        <div class="section-title">STUDENT</div>
+        <div class="content">
+            Hello! My name is Siddharth (Sid) Shah. I am currently a freshman at
+            Winston Churchill High School in Potomac, Maryland.
+            <br><br>
+            I have a strong passion for robotics and programming. Outside of academics,
+            I enjoy running track and playing basketball and football with friends.
+        </div>
+    </div>
+
+    <!-- FTC -->
+    <div class="light-box">
+        <div class="section-title">FIRST TECH CHALLENGE</div>
+        <div class="content">
+            FIRST is a global robotics organization focused on spreading STEM.
+            <br><br>
+            I began in FIRST LEGO League in 3rd grade, later captaining teams
+            in multiple seasons before transitioning into FTC.
+            <br><br>
+            I am currently a programmer on FTC Team 13100 — 47 Beavers.
+        </div>
+    </div>
+
+    <!-- TRACK -->
+    <div class="light-box">
+        <div class="section-title">TRACK & FIELD</div>
+        <div class="content">
+            I began running track in 7th grade and trained consistently for
+            several years as a distance runner.
+            <br><br>
+            I am currently a member of my high school's varsity track and field team,
+            practicing and competing year-round.
+        </div>
+    </div>
+
+</div>
 
 </body>
-<div class="light-box">   
-<h2 style="text-align: center; color: rgb(254, 254, 254);">
-    Introduction
-</h2>
-<h4 class="content" style="text-align: center; color: rgb(254, 254, 254);"> Hello! My name is Siddharth (Sid) Shah, I am a 14 years old. 
-    I am currently a freshmen a Winston Churchill high school located in Potomac, Maryland. 
-    I have a strong passion for robotics and programming. I also enjoy running track as my sport, 
-    as well as play basketball and football with my friends</h3>
-</div>
-<div class="light-box">   
-<h2 style="text-align: center; color: rgb(254, 254, 254);">
-    FIRST Tech Challenge 
-<img src="firstLogo.png" alt="FIRST" class="FTClogo">
-</h2>
-<h4 class="content" style="text-align: center; color: rgb(254, 254, 254);"> FIRST is a robotics-based organization with a 
-    goal to spread STEM across the world. I joined the first program in 5rd grade in FIRST Lego League, as a programmer 
-    on team 39708 STARS participating in the Replay and Cargo Connect season, and later trasitioned to 55989 LEDS as the captain 
-for the duration of the Superpowered season. My passion continued onto FIRST Tech Challenge which I participate on currently as programmer
-originally as the captian of 24163 Illuminate for Centerstage and Into The Deep. Now I am a programmer on 13100 47 Beavers for the Decode season.
-I hope to continue FTC as it has been engraved in my life for well...almost 6 years. </h3>
-</div>
-<div class="light-box">   
-<h2 style="text-align: center; color: rgb(254, 254, 254);">
-    Track & Field
-<img src="Track.png" alt="Track" class="FTClogo">
-</h2>
-<h4 class="content" style="text-align: center; color: rgb(254, 254, 254);"> Starting in 7th grade I wanted to join a sport that served as a stable 
-    exercise and was stable. I had quit basketball earlier in the year as it was not for me and took too much time out of my
-life that I could have spent on something useful. I practiced nearly everyday for the next 2 years running as a distance runner
-on Bethesda Track throughout the rest of middle school, getting decent times at track meets. Later in highschool I join the 
-Varsity track and field team which I am currently running for with extraneous practices everday </h3>
-</div>
 </html>
