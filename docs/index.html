@@ -5,6 +5,9 @@
 <title>Sid Shah</title>
 
 <style>
+/* ======================
+   GLOBAL STYLES
+====================== */
 body {
     margin: 0;
     background-color: #0f1512;
@@ -12,7 +15,9 @@ body {
     color: #eaeaea;
 }
 
-/* ===== Main container ===== */
+/* ======================
+   MAIN CONTAINER
+====================== */
 .container {
     max-width: 900px;
     margin: auto;
@@ -20,7 +25,9 @@ body {
     text-align: center;
 }
 
-/* ===== Profile image ===== */
+/* ======================
+   PROFILE IMAGE
+====================== */
 .profile-pic {
     width: 200px;
     height: 200px;
@@ -30,7 +37,9 @@ body {
     margin-bottom: 20px;
 }
 
-/* ===== Name ===== */
+/* ======================
+   NAME + TITLE
+====================== */
 .name {
     font-size: 48px;
     font-weight: bold;
@@ -39,40 +48,54 @@ body {
 
 .highlight {
     background-color: rgba(120, 140, 190, 0.3);
-    padding: 6px 14px;
+    padding: 6px 16px;
     border-radius: 8px;
 }
 
-/* ===== Subtitle ===== */
+/* ======================
+   SUBTITLE
+====================== */
 .subtitle {
     font-size: 20px;
     opacity: 0.8;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
 }
 
-/* ===== Divider ===== */
+/* ======================
+   DIVIDERS
+====================== */
 .divider {
     height: 2px;
     background-color: #9aa7b8;
     margin: 35px 0;
 }
 
-/* ===== Social icons ===== */
+/* ======================
+   SOCIAL ICONS
+====================== */
 .socials {
     display: flex;
     justify-content: center;
     gap: 30px;
 }
 
-.socials img {
+.socials a img {
     width: 55px;
     height: 55px;
     border-radius: 50%;
     background-color: #6f6f6f;
     padding: 12px;
+    transition: 0.25s ease;
 }
 
-/* ===== Section cards ===== */
+.socials a img:hover {
+    transform: scale(1.15);
+    box-shadow: 0 0 18px rgb(2, 207, 71);
+}
+
+/* ======================
+   CONTENT CARDS
+====================== */
 .light-box {
     background-color: #1b2420;
     margin: 40px auto;
@@ -81,18 +104,40 @@ body {
     box-shadow: 0 0 25px rgb(2, 207, 71);
 }
 
-/* ===== Section titles ===== */
+/* ======================
+   SECTION HEADERS
+====================== */
 .section-title {
     font-size: 30px;
-    margin-bottom: 15px;
+    margin-bottom: 18px;
     letter-spacing: 2px;
 }
 
-/* ===== Text ===== */
+/* ======================
+   TEXT
+====================== */
 .content {
     font-size: 18px;
-    line-height: 1.6;
+    line-height: 1.65;
     color: #dcdcdc;
+}
+
+/* ======================
+   MOBILE SUPPORT
+====================== */
+@media (max-width: 600px) {
+    .name {
+        font-size: 36px;
+    }
+
+    .profile-pic {
+        width: 160px;
+        height: 160px;
+    }
+
+    .section-title {
+        font-size: 24px;
+    }
 }
 </style>
 </head>
@@ -102,7 +147,7 @@ body {
 <div class="container">
 
     <!-- PROFILE IMAGE -->
-    <img src="Sid.png" class="profile-pic">
+    <img src="Sid.png" alt="Sid Shah" class="profile-pic">
 
     <!-- NAME -->
     <div class="name">
@@ -111,21 +156,31 @@ body {
 
     <!-- SUBTITLE -->
     <div class="subtitle">
-        Robotics programmer, student, athlete
+        Robotics programmer • Student • Athlete
     </div>
 
     <div class="divider"></div>
 
-    <!-- SOCIAL ICONS -->
+    <!-- SOCIAL LINKS -->
     <div class="socials">
-        <img src="linkedin.png">
-        <img src="github.png">
-        <img src="email.png">
+
+        <a href="mailto:shahsiddharth121@gmail.com" target="_blank">
+            <img src="email.png" alt="Email">
+        </a>
+
+        <a href="https://instagram.com/sid_shah0" target="_blank">
+            <img src="instagram.png" alt="Instagram">
+        </a>
+
+        <a href="https://github.com/siddharth-shah121" target="_blank">
+            <img src="github.png" alt="GitHub">
+        </a>
+
     </div>
 
     <div class="divider"></div>
 
-    <!-- INTRODUCTION -->
+    <!-- STUDENT -->
     <div class="light-box">
         <div class="section-title">STUDENT</div>
         <div class="content">
@@ -141,12 +196,13 @@ body {
     <div class="light-box">
         <div class="section-title">FIRST TECH CHALLENGE</div>
         <div class="content">
-            FIRST is a global robotics organization focused on spreading STEM.
+            FIRST is a global robotics organization dedicated to spreading STEM
+            across the world.
             <br><br>
-            I began in FIRST LEGO League in 3rd grade, later captaining teams
-            in multiple seasons before transitioning into FTC.
+            I began in FIRST LEGO League in 3rd grade and later served as a team
+            captain across multiple seasons.
             <br><br>
-            I am currently a programmer on FTC Team 13100 — 47 Beavers.
+            I am currently a programmer on FTC Team <strong>13100 — 47 Beavers</strong>.
         </div>
     </div>
 
@@ -154,11 +210,11 @@ body {
     <div class="light-box">
         <div class="section-title">TRACK & FIELD</div>
         <div class="content">
-            I began running track in 7th grade and trained consistently for
-            several years as a distance runner.
+            I began running track in 7th grade as a distance runner and trained
+            consistently for multiple years.
             <br><br>
-            I am currently a member of my high school's varsity track and field team,
-            practicing and competing year-round.
+            I am currently a member of my high school’s varsity track and field
+            team, practicing and competing throughout the season.
         </div>
     </div>
 
