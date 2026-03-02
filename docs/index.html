@@ -1,145 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Sid Shah</title>
+    <meta charset="UTF-8">
+    <title>Sid Shah</title>
 
-<style>
-/* ======================
-   GLOBAL STYLES
-====================== */
-body {
-    margin: 0;
-    background-color: #0f1512;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #eaeaea;
-}
+    <style>
 
-/* ======================
-   MAIN CONTAINER
-====================== */
-.container {
-    max-width: 900px;
-    margin: auto;
-    padding: 40px 20px;
-    text-align: center;
-}
+        /* ======================
+           GLOBAL STYLES
+        ====================== */
+        body {
+            margin: 0;
+            background-color: #0f1512;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #eaeaea;
+        }
 
-/* ======================
-   PROFILE IMAGE
-====================== */
-.profile-pic {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    object-fit: cover;
-    box-shadow: 0 0 25px rgb(2, 207, 71);
-    margin-bottom: 20px;
-}
+        html {
+            scroll-behavior: smooth;
+        }
 
-/* ======================
-   NAME + TITLE
-====================== */
-.name {
-    font-size: 48px;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
+        /* ======================
+           MAIN CONTAINER
+        ====================== */
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 60px 20px;
+            text-align: center;
+        }
 
-.highlight {
-    background-color: rgba(120, 140, 190, 0.3);
-    padding: 6px 16px;
-    border-radius: 8px;
-}
+        /* ======================
+           PROFILE IMAGE
+        ====================== */
+        .profile-pic {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 0 25px rgb(2, 207, 71);
+            margin-bottom: 25px;
+        }
 
-/* ======================
-   SUBTITLE
-====================== */
-.subtitle {
-    font-size: 20px;
-    opacity: 0.8;
-    margin-bottom: 35px;
-}
+        /* ======================
+           NAME + TITLE
+        ====================== */
+        .name {
+            font-size: 46px;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
 
-/* ======================
-   DIVIDERS
-====================== */
-.divider {
-    height: 2px;
-    background-color: #9aa7b8;
-    margin: 35px 0;
-}
+        .subtitle {
+            font-size: 20px;
+            opacity: 0.8;
+            margin-bottom: 40px;
+        }
 
-/* ======================
-   SOCIAL ICONS
-====================== */
-.socials {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-}
+        /* ======================
+           DIVIDER
+        ====================== */
+        .divider {
+            height: 2px;
+            background-color: #9aa7b8;
+            margin: 40px 0;
+            opacity: 0.4;
+        }
 
-.socials a img {
-    width: 55px;
-    height: 55px;
-    border-radius: 50%;
-    background-color: #6f6f6f;
-    padding: 12px;
-    transition: 0.25s ease;
-}
+        /* ======================
+           SOCIAL BUTTONS
+        ====================== */
+        .socials {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
 
-.socials a img:hover {
-    transform: scale(1.15);
-    box-shadow: 0 0 18px rgb(2, 207, 71);
-}
+        .social-btn {
+            text-decoration: none;
+            color: #0f1512;
+            background-color: rgb(2, 207, 71);
+            padding: 12px 30px;
+            border-radius: 8px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            transition: 0.3s ease;
+        }
 
-/* ======================
-   CONTENT CARDS
-====================== */
-.light-box {
-    background-color: #1b2420;
-    margin: 40px auto;
-    padding: 35px;
-    border-radius: 18px;
-    box-shadow: 0 0 25px rgb(2, 207, 71);
-}
+        .social-btn:hover {
+            background-color: #00ff88;
+            transform: translateY(-5px);
+            box-shadow: 0 0 20px rgb(2, 207, 71);
+        }
 
-/* ======================
-   SECTION HEADERS
-====================== */
-.section-title {
-    font-size: 30px;
-    margin-bottom: 18px;
-    letter-spacing: 2px;
-}
+        /* ======================
+           CONTENT CARDS
+        ====================== */
+        .light-box {
+            background-color: #1b2420;
+            margin: 40px auto;
+            padding: 35px;
+            border-radius: 18px;
+            box-shadow: 0 0 20px rgba(2, 207, 71, 0.6);
+            transition: 0.3s ease;
+        }
 
-/* ======================
-   TEXT
-====================== */
-.content {
-    font-size: 18px;
-    line-height: 1.65;
-    color: #dcdcdc;
-}
+        .light-box:hover {
+            transform: translateY(-6px);
+        }
 
-/* ======================
-   MOBILE SUPPORT
-====================== */
-@media (max-width: 600px) {
-    .name {
-        font-size: 36px;
-    }
+        /* ======================
+           SECTION HEADERS
+        ====================== */
+        .section-title {
+            font-size: 28px;
+            margin-bottom: 18px;
+            letter-spacing: 2px;
+        }
 
-    .profile-pic {
-        width: 160px;
-        height: 160px;
-    }
+        /* ======================
+           TEXT
+        ====================== */
+        .content {
+            font-size: 18px;
+            line-height: 1.7;
+            color: #dcdcdc;
+        }
 
-    .section-title {
-        font-size: 24px;
-    }
-}
-</style>
+        /* ======================
+           MOBILE SUPPORT
+        ====================== */
+        @media (max-width: 600px) {
+            .name {
+                font-size: 34px;
+            }
+
+            .profile-pic {
+                width: 160px;
+                height: 160px;
+            }
+
+            .section-title {
+                font-size: 22px;
+            }
+        }
+
+    </style>
 </head>
 
 <body>
@@ -150,13 +157,11 @@ body {
     <img src="Sid.png" alt="Sid Shah" class="profile-pic">
 
     <!-- NAME -->
-    <div class="name">
-        Hi, I'm <span class="highlight">Sid Shah</span>!
-    </div>
+    <div class="name">Sid Shah</div>
 
     <!-- SUBTITLE -->
     <div class="subtitle">
-        Robotics programmer • Student • Athlete
+        Robotics Programmer • Student • Athlete
     </div>
 
     <div class="divider"></div>
@@ -164,16 +169,16 @@ body {
     <!-- SOCIAL LINKS -->
     <div class="socials">
 
-        <a href="mailto:shahsiddharth121@gmail.com" target="_blank">
-            <img src="email.png" alt="Email">
+        <a href="mailto:shahsiddharth121@gmail.com" target="_blank" class="social-btn">
+            Email
         </a>
 
-        <a href="https://instagram.com/sid_shah0" target="_blank">
-            <img src="instagram.png" alt="Instagram">
+        <a href="https://instagram.com/sid_shah0" target="_blank" class="social-btn">
+            Instagram
         </a>
 
-        <a href="https://github.com/siddharth-shah121" target="_blank">
-            <img src="github.png" alt="GitHub">
+        <a href="https://github.com/siddharth-shah121" target="_blank" class="social-btn">
+            GitHub
         </a>
 
     </div>
